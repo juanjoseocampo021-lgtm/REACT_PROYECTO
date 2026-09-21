@@ -1,0 +1,1 @@
+import React from 'react'; import { Link } from 'react-router-dom'; export const NotFound=()=> <main className="not-found"><span>404</span><h1>Este destino no aparece en el mapa</h1><p>La página que buscas no existe o fue movida.</p><Link to="/">Volver al inicio</Link></main>

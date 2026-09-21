@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: horizonte-viajes
+    runtime: python
+    plan: free
+    buildCommand: bash build.sh
+    startCommand: cd TrimestreReact/backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./horizonte_viajes.db
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PYTHON_VERSION
+        value: "3.12"
+      - key: NODE_VERSION
+        value: "20"
