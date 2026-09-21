@@ -43,6 +43,21 @@ Base.metadata.create_all(
 
 
 # ============================================================
+# SEMBRAR DATOS INICIALES (SQLite)
+# ============================================================
+from .database import SessionLocal
+from .seed import sembrar_datos
+
+_db = SessionLocal()
+try:
+    sembrar_datos(_db)
+except Exception:
+    pass
+finally:
+    _db.close()
+
+
+# ============================================================
 # CARPETA DE IMÁGENES
 # ============================================================
 #
