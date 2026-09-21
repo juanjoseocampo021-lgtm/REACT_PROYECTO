@@ -72,6 +72,18 @@ def sembrar_datos(db: Session):
     # Productos
     productos = [
         Producto(
+            nombre="Fin de semana en Santa Fe de Antioquia",
+            descripcion="Escapada de fin de semana al municipio colonial de Santa Fe de Antioquia",
+            descripcion_detallada="Disfruta de un fin de semana en uno de los pueblos mas hermosos de Antioquia. Callejones coloniales, puente de occidente y clap de chocolate.",
+            duracion="5 dias",
+            tipo_experiencia="Cultural",
+            que_puedes_esperar="Arquitectura colonial, clima calido, gastronomia tipica y el famoso puente de Occidente.",
+            precio=350000,
+            imagen_url="/uploads/b0afede42f784becac9e78b227e9b14c.png",
+            region="Antioquia",
+            estado="activo",
+        ),
+        Producto(
             nombre="Paquete Cascada de Otono",
             descripcion="Tour guiado de un dia a la cascada con almuerzo incluido",
             descripcion_detallada="Disfruta de un dia inolvidable visitando la cascada mas hermosa de la region. Incluye guia turistico, almuerzo tipico y transporte.",
@@ -113,7 +125,7 @@ def sembrar_datos(db: Session):
             descripcion_detallada="Explora la biodiversidad unica de los Llanos Orientales. Observa garzas, tucanes, guacamayas y muchas mas especies.",
             duracion="2 dias / 1 noche",
             tipo_experiencia="Naturaleza",
-            que_puedes_esperar="Avistamiento de mas de 100 especies de aves, atardecer en el llano y experiencecia rural.",
+            que_puedes_esperar="Avistamiento de mas de 100 especies de aves, atardecer en el llano y experiencia rural.",
             precio=450000,
             imagen_url="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1200&q=85",
             region="Llanos Orientales",
@@ -122,7 +134,7 @@ def sembrar_datos(db: Session):
         Producto(
             nombre="Tour Ciudad Perdida",
             descripcion="Trekking hacia la Ciudad Perdida, Tayrona",
-            descripcion_detallada="Aventurate en el trekking mas icónico de Colombia. 4 dias caminando por la sierra nevada hasta la legendaria Ciudad Perdida.",
+            descripcion_detallada="Aventurate en el trekking mas iconico de Colombia. 4 dias caminando por la sierra nevada hasta la legendaria Ciudad Perdida.",
             duracion="4 dias / 3 noches",
             tipo_experiencia="Aventura",
             que_puedes_esperar="Paisajes de montaña, rios cristalinos, cultura indigena Kogui y la emocion de llegar a la Ciudad Perdida.",
