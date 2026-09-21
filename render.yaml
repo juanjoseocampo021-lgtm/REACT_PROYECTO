@@ -1,10 +1,12 @@
 services:
+  # BACKEND - API FastAPI
   - type: web
-    name: horizonte-viajes
+    name: horizonte-api
     runtime: python
     plan: free
+    rootDir: TrimestreReact/backend
     buildCommand: bash build.sh
-    startCommand: cd TrimestreReact/backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: DATABASE_URL
         value: sqlite:///./horizonte_viajes.db
@@ -14,7 +16,23 @@ services:
         value: "*"
       - key: GEMINI_API_KEY
         sync: false
+      - key: SEPARATE_FRONTEND
+        value: "true"
+      - key: FRONTEND_URL
+        sync: false
       - key: PYTHON_VERSION
         value: "3.12"
+
+  # FRONTEND - React static site
+  - type: web
+    name: horizonte-frontend
+    runtime: static
+    plan: free
+    rootDir: TrimestreReact/frontend
+    buildCommand: bash build.sh
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false
       - key: NODE_VERSION
         value: "20"

@@ -1,0 +1,296 @@
+               SENA - REGIONAL ANTIOQUIA | CENTRO DE SERVICIO Y GESTIÓN EMPRESARIAL
+    LISTA DE CHEQUEO - QUINTO AVANCE: REACT + VITE + FASTAPI + BASE DE DATOS SQL + INTELIGENCIA
+                                             ARTIFICIAL
+
+ 1. DATOS DEL APRENDIZ Y DEL PROGRAMA DE FORMACIÓN
+Nombre del
+Aprendiz:                                                Fecha de Presentación:                         2026-09-14
+Documento de
+Identidad:                                               Ficha de Caracterización:
+                   ADSO (Análisis
+Programa de        y Desarrollo de
+Formación:         Software)                             Trimestre / Ambiente:                          03 / Ambiente
+Competencia:       React + Vite / FastAPI                Instructor Lider:                              Jhan Hader Muñoz
+ 2. INDICADORES DE AVANCE Y RESUMEN DE EVALUACIÓN
+Total                                Requerimientos
+Requerimientos:          25          Cumplidos:                        0                   0.0%
+Requerimientos                       Requerimientos                                    PENDIENTE
+En Proceso:               0          Pendientes:                       25               REVISIÓN
+Valoración Final    Aprobado / No
+Instructor:           Aprobado
+ 3. LISTA DE CHEQUEO - REQUERIMIENTOS DETALLADOS DEL ENTREGABLE (REQ-01 AL REQ-26)
+                                                                                        Espacio
+                                                             Detalle / Criterio de        para     Observaciones del
+                    Categoría /
+       No.                             Requerimiento       Aceptación (PDF Quinto      Evidencia / Aprendiz / Notas de
+                     Módulo
+                                                                   Avance)             Captura de       Entrega
+                                                                                        Pantalla
+                                                        El sistema deberá permitir
+                                                        registrar las ventas
+                                                        realizadas desde el sitio
+                                                        web, relacionando cliente,
+                                                        usuario operador,
+                   Módulo de                            productos/servicios            [Pegar Captura
+     REQ-01                           Módulo de ventas                                   de Pantalla
+                   Ventas                               vendidos, cantidades,               Aquí]
+                                                        precios, descuentos,
+                                                        subtotal, impuestos, total,
+                                                        fecha/hora y estado,
+                                                        almacenado de manera
+                                                        persistente en BD SQL.
+                                                        El sistema deberá
+                                                        identificar productos y
+                                                        servicios incluidos en cada
+                                        Registro de     venta con relación detalle-    [Pegar Captura
+                   Módulo de
+     REQ-02                             productos y     venta, permitiendo               de Pantalla
+                   Ventas                                                                   Aquí]
+                                     servicios vendidos almacenar cantidades,
+                                                        precios y valores
+                                                        correspondientes a cada
+                                                        elemento comercializado.
+
+                                                         Módulo para consultar el
+                                                         historial de ventas
+                                                         registradas con criterios de [Pegar Captura
+                   Módulo de
+     REQ-03                          Historial de ventas búsqueda/filtrado por          de Pantalla
+                   Ventas                                                                  Aquí]
+                                                         fecha, cliente, producto,
+                                                         servicio, estado y valor de
+                                                         la venta.
+
+                                                        Generar reporte diario de
+                                                        ventas con la información
+                                                        registrada en una fecha
+                                                        determinada, incluyendo        [Pegar Captura
+                   Reportes y         Reporte diario de fecha, número de venta,
+     REQ-04                                                                              de Pantalla
+                   Facturación            ventas        cliente,                            Aquí]
+                                                        productos/servicios,
+                                                        cantidad, valor, total y
+                                                        estado.
+                                       Implementar la generación
+                                       del reporte diario de
+                                       ventas en formato PDF
+         Reportes y    Exportación del estructurado con                  [Pegar Captura
+REQ-05                                                                     de Pantalla
+         Facturación   reporte en PDF nombre/ID de proyecto,                  Aquí]
+                                       fecha, información de
+                                       ventas, totales y datos de
+                                       generación.
+
+                                        Exportar el reporte diario
+                                        de ventas en formato
+                                        Excel (.xlsx) con                [Pegar Captura
+         Reportes y    Exportación del
+REQ-06                                  información organizada en          de Pantalla
+         Facturación   reporte en Excel                                       Aquí]
+                                        columnas para posterior
+                                        análisis, filtrado o
+                                        procesamiento de datos.
+
+                                         El sistema deberá generar
+                                         facturas de venta a partir
+                                         de operaciones
+                                         comerciales con número
+         Reportes y      Generación de de factura, fecha, datos          [Pegar Captura
+REQ-07                                                                     de Pantalla
+         Facturación   facturas de venta del cliente,                         Aquí]
+                                         productos/servicios,
+                                         cantidad, precio unitario,
+                                         subtotal, impuestos, total y
+                                         estado.
+
+                                          Los usuarios autorizados
+                                          podrán consultar las
+                                                                         [Pegar Captura
+         Reportes y      Consulta de      facturas generadas
+REQ-08                                                                     de Pantalla
+         Facturación      facturas        mediante criterios de               Aquí]
+                                          búsqueda como número
+                                          de factura, cliente o fecha.
+
+
+
+                                          Implementar la generación
+                                          o descarga de facturas         [Pegar Captura
+         Reportes y      Descarga de
+REQ-09                                    comerciales en formato           de Pantalla
+         Facturación       facturas                                           Aquí]
+                                          apropiado
+                                          (preferiblemente PDF).
+
+
+
+                                          Dashboard consolidado
+                                          para el Administrador con
+                                          indicadores en Cards           [Pegar Captura
+         Dashboards      Dashboard
+REQ-10                                    sobre total usuarios,            de Pantalla
+         y Analítica    administrativo                                        Aquí]
+                                          productos, servicios,
+                                          ventas, facturación y PQR
+                                          recibidas y pendientes.
+
+                                          Visualización analítica del
+                                          comportamiento de ventas
+                                          mediante gráfico de            [Pegar Captura
+         Dashboards     Dashboard de
+REQ-11                                    barras, gráfico lineal e         de Pantalla
+         y Analítica       ventas                                             Aquí]
+                                          indicadores numéricos en
+                                          Cards por día, semana o
+                                          mes.
+
+                                       Los Dashboards deben
+                                       respetar la seguridad por
+                                       roles (Administrador,
+                        Dashboard de                                     [Pegar Captura
+         Dashboards                    Empleado, Cliente)
+REQ-12                 acuerdo con los                                     de Pantalla
+         y Analítica                   mostrando solo la                      Aquí]
+                            roles
+                                       información y
+                                       funcionalidades permitidas
+                                       según permisos.
+                                            Los gráficos e indicadores
+                                            de los Dashboards deben
+         Dashboards      Filtros para los   permitir filtrado por fecha   [Pegar Captura
+REQ-13                                                                      de Pantalla
+         y Analítica      Dashboards        inicial, fecha final,              Aquí]
+                                            producto, servicio, estado
+                                            y cliente.
+
+
+
+                                         Creación de endpoints
+                                         REST en FastAPI para
+         Backend        Nuevos endpoints soportar ventas, detalle de      [Pegar Captura
+REQ-14                                                                      de Pantalla
+         FastAPI           en FastAPI    ventas, facturas, reportes,           Aquí]
+                                         PQR, Chatbot y
+                                         estadísticas.
+
+                                            React consumirá los
+                                            endpoints de FastAPI para
+                                            obtener la información de
+                         Integración del                                  [Pegar Captura
+         Backend &                          la BD SQL y generar
+REQ-15                   Dashboard con                                      de Pantalla
+         Frontend                           dinámicamente                      Aquí]
+                             FastAPI
+                                            indicadores y gráficos (sin
+                                            datos manuales
+                                            'quemados').
+
+                                        Módulo para la gestión de
+                                        PQR donde el cliente
+                      Módulo de PQR                                       [Pegar Captura
+                                        registra solicitudes y
+REQ-16   Módulo PQR (Peticiones, Quejas                                     de Pantalla
+                       y Reclamos)
+                                        consulta el estado                     Aquí]
+                                        (pendiente, en proceso,
+                                        respondida y cerrada).
+
+                                          Chatbot integrado en el
+                                          Frontend React para
+                                          atención inicial, resolver
+                                                                          [Pegar Captura
+                         Chatbot para     preguntas frecuentes,
+REQ-17   Chatbot & IA                                                       de Pantalla
+                      atención al cliente orientar sobre                       Aquí]
+                                          productos/servicios,
+                                          compras y recepción de
+                                          PQR.
+
+                                            El Chatbot utilizará un
+                                            servicio de IA (API OpenAI
+                         Integración del
+                                            o equivalente) integrado      [Pegar Captura
+                           Chatbot con
+REQ-18   Chatbot & IA                       preferiblemente desde           de Pantalla
+                           Inteligencia                                        Aquí]
+                             Artificial     FastAPI para respuestas
+                                            naturales y
+                                            contextualizadas.
+
+                                       Configuración de la API
+                                       Key del servicio de IA
+                                       mediante variables de              [Pegar Captura
+         Seguridad & Gestión segura de
+REQ-19                                 entorno (.env local),                de Pantalla
+         Config         la API Key                                             Aquí]
+                                       manteniéndola privada sin
+                                       publicar en GitHub ni en
+                                       código fuente.
+
+                                            Despliegue de la
+                                            aplicación Full Stack en la
+                                            nube (Railway u otra
+                          Integración
+                                            plataforma), configurando     [Pegar Captura
+         Despliegue       completa y                                        de Pantalla
+REQ-20                                      URLs, CORS, variables de
+         en la Nube      despliegue del                                        Aquí]
+                            proyecto
+                                            entorno, BD SQL y
+                                            presentando la URL
+                                            pública activa con
+                                            evidencias.
+                                                           Ampliación del modelo
+                                                           relacional SQL incluyendo
+                                                           las entidades: ventas,                 [Pegar Captura
+                       Base de            Evolución de la
+      REQ-21                                               detalle_ventas, facturas,                de Pantalla
+                       Datos SQL         Base de Datos SQL                                             Aquí]
+                                                           detalle_facturas, pqr,
+                                                           conversaciones, mensajes
+                                                           y sus relaciones foráneas.
+
+                                                            Nuevos modelos ORM
+                                                            (SQLAlchemy) y
+                                              Modelos y     esquemas Pydantic para                [Pegar Captura
+                       Backend
+      REQ-22                             Esquemas FastAPI la validación de                          de Pantalla
+                       FastAPI                                                                         Aquí]
+                                         para Quinto Avance peticiones/respuestas de
+                                                            las nuevas entidades
+                                                            comerciales y de IA.
+
+                                                             Desarrollo de nuevos
+                                                             componentes React
+                                             Componentes integrados visualmente                   [Pegar Captura
+                       Frontend
+      REQ-23                                Reutilizables en con el diseño previo,                  de Pantalla
+                       React                                                                           Aquí]
+                                              React + Vite   gestionando estados e
+                                                             interacción con las APIs
+                                                             del backend.
+
+                                                             Verificación JWT en
+                                                             peticiones, control estricto
+                                          Seguridad Integral de roles en BE, hashing de [Pegar Captura
+      REQ-24           Seguridad           y Protección de contraseñas (bcrypt),          de Pantalla
+                                              Endpoints                                      Aquí]
+                                                             protección de credenciales
+                                                             y variables de entorno
+                                                             .env.
+
+                                                                   Demostración de pruebas
+                                                                   funcionales mediante
+                                                                   Postman (GET, POST,
+                                             Pruebas de                                           [Pegar Captura
+                       Pruebas &                                   PUT, PATCH, DELETE)
+      REQ-25                                Endpoints con                                           de Pantalla
+                       Evidencias                                  sobre los nuevos                    Aquí]
+                                              Postman
+                                                                   endpoints de ventas,
+                                                                   facturas, PQR y chatbot
+                                                                   IA.
+URL del Drive o GitHub del Entregable:
+Versión del Instrumento: 2.0 | Quinto Entregable React + FastAPI + IA | Generado: 2026-09-14
+Nota: Este archivo es una herramienta de autoevaluación académica ajustada al Quinto Avance para el SENA ADSO Ficha 3406204.
+

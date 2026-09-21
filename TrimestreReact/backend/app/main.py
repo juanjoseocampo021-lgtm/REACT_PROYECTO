@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 from fastapi import FastAPI, Request
@@ -356,8 +357,11 @@ def salud():
 # ============================================================
 # ARCHIVOS ESTÁTICOS DEL FRONTEND (producción)
 # ============================================================
+# Solo sirve el frontend si se ejecuta en modo monolítico
+# (cuando STATIC_DIR existe y no hay un deploy separado).
+# ============================================================
 
-if STATIC_DIR.exists():
+if STATIC_DIR.exists() and not os.getenv("SEPARATE_FRONTEND"):
     app.mount(
         "/assets",
         StaticFiles(directory=STATIC_DIR / "assets"),

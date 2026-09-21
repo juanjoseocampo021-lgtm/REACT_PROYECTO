@@ -22,5 +22,10 @@ CORS_ORIGINS = [
     if origin.strip()
 ]
 
+FRONTEND_URL = os.getenv("FRONTEND_URL", "")
+
+if FRONTEND_URL and FRONTEND_URL not in CORS_ORIGINS:
+    CORS_ORIGINS.append(FRONTEND_URL)
+
 if not JWT_SECRET:
     JWT_SECRET = "H7vQ9mX2pL8kR4zN6tW3yF5sJ1cD9aB7uE2xK8qP6"
